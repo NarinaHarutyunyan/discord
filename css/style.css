@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.discord {
+  background-image: url(../img/af8d63a477078732b79ff9d9fc60873f.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 694px;
+}
+
+.discord .form {
+  background-color: #36393F;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  min-height: 550px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 75px auto;
+  top: calc(50%-275px);
+}
+
+.discord .form .left_form {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-left: 35px;
+}
+
+.discord .form .left_form .welcome_back {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.discord .form .left_form .we_are_happy {
+  text-align: center;
+  color: #B9BBBE;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.discord .form .left_form form {
+  margin-top: 20px;
+}
+
+.discord .form .left_form form .email_pass {
+  font-size: 15px;
+  color: #7E8287;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.discord .form .left_form form input {
+  width: 550px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #303339;
+  border: 1px black solid;
+}
+
+.discord .form .left_form form input:hover {
+  border: 1px solid #7289DA;
+}
+
+.discord .form .left_form form .pass_sign {
+  margin-top: 10px;
+}
+
+.discord .form .left_form form .pass_sign a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #697DC2;
+}
+
+.discord .form .left_form form .pass_sign a:hover {
+  text-decoration: underline;
+}
+
+.discord .form .left_form form button {
+  background-color: #7289DA;
+  width: 550px;
+  height: 55px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.discord .form .left_form form button:hover {
+  background-color: #697DC2;
+}
+
+.discord .form .left_form form .pass_sign {
+  font-size: 17px;
+  color: #585C62;
+  margin-bottom: 35px;
+}
+
+.discord .form .qr_code {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  margin-top: 50px;
+  margin-right: 35px;
+}
+
+.discord .form .qr_code .qr_code_img {
+  margin-left: 110px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.discord .form .qr_code .qr_code_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.discord .form .qr_code .sign_with_qr {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.discord .form .qr_code .mobile_app {
+  color: #B9BBBE;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.discord .form .qr_code .mobile_app a {
+  text-decoration: none;
+  color: #B9BBBE;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1650px) {
+  .discord .form {
+    max-width: 850px;
+    min-height: 450px;
+  }
+  .discord .form .left_form .welcome_back {
+    font-size: 25px;
+  }
+  .discord .form .left_form .we_are_happy {
+    font-size: 16px;
+  }
+  .discord .form .left_form form .email_pass {
+    font-size: 13px;
+  }
+  .discord .form .left_form form input {
+    width: 450px;
+    height: 45px;
+  }
+  .discord .form .left_form form .pass_sign a {
+    font-size: 16px;
+  }
+  .discord .form .left_form form button {
+    width: 450px;
+    height: 45px;
+  }
+  .discord .form .qr_code .qr_code_img {
+    width: 200px;
+    height: 200px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+  .discord .form .qr_code .sign_with_qr {
+    font-size: 25px;
+  }
+  .discord .form .qr_code .mobile_app {
+    font-size: 17px;
+  }
+  .discord .form .qr_code .mobile_app a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .discord .qr_code {
+    display: none;
+  }
+  .discord .form {
+    max-width: 750px;
+  }
+  .discord .form .left_form {
+    margin-left: unset;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .discord {
+    background-image: unset;
+    background-color: #36393F;
+  }
+  .discord .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .discord .form .left_form .welcome_back {
+    font-size: 25px;
+  }
+  .discord .form .left_form .we_are_happy {
+    font-size: 16px;
+  }
+  .discord .form .left_form form .email_pass {
+    font-size: 12px;
+  }
+  .discord .form .left_form form input {
+    width: 400px;
+    height: 40px;
+  }
+  .discord .form .left_form form .pass_sign a {
+    font-size: 14px;
+  }
+  .discord .form .left_form form button {
+    width: 400px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .discord .form .left_form .welcome_back {
+    font-size: 25px;
+  }
+  .discord .form .left_form .we_are_happy {
+    font-size: 16px;
+  }
+  .discord .form .left_form form .email_pass {
+    font-size: 7px;
+  }
+  .discord .form .left_form form input {
+    width: 250px;
+    height: 30px;
+  }
+  .discord .form .left_form form .pass_sign a {
+    font-size: 11px;
+  }
+  .discord .form .left_form form button {
+    width: 250px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+$open:'Open Sans', sans-serif;
+$source:'Source Sans Pro', sans-serif;
+
+
+
+
+$default : #36393F;
+$white : #fff;
+$color:#7E8287;
+$input_bg:#303339;
+
+
+.discord{
+    background-image: url(../img/af8d63a477078732b79ff9d9fc60873f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom:694px;
+
+    .form{
+        background-color: $default;
+        justify-content: space-around;    
+        display: flex;
+        max-width:1200px;
+        min-height: 550px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin:75px auto; 
+        top: calc(50%-275px);        
+     
+        .left_form{
+            flex-basis:60%;
+            margin-left:35px;
+            .welcome_back{
+                color: $white;
+                text-align: center;
+                font-size:35px;
+                font-weight: bold;
+                margin-top: 50px;
+            }
+            .we_are_happy{
+                text-align: center;
+                color:#B9BBBE;
+                font-size: 18px;
+                font-weight: 300;
+                margin-top: 10px;
+    
+            }
+            form{
+                margin-top:20px;
+                
+                .email_pass{
+                    font-size:15px;
+                    color:$color;
+                    margin-bottom: 5px;
+                    margin-top:25px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                  
+                }
+                input{
+                    width: 550px;
+                    height: 55px;
+                    border-radius: 5px;                
+                    background-color: $input_bg;
+                    border: 1px black solid;
+                    &:hover{
+                        border: 1px solid #7289DA;
+                    }
+                }
+                .pass_sign{
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        
+                        font-size: 17px;
+                        color: #697DC2;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                button{
+                    background-color: #7289DA;
+                    width: 550px;
+                    height: 55px;
+                    transition: all 1s;
+                    cursor: pointer;
+                    color: $white;
+                    font-size: 17px;
+                    border: none;
+                    border-radius: 5px;
+                    
+                    margin-bottom: 10px;
+                    &:hover{
+                        background-color:#697DC2 ;
+                    }
+    
+                }
+                .pass_sign{
+                    font-size: 17px;
+                    color: #585C62;
+                    margin-bottom: 35px;
+    
+                }
+            }
+        }
+        .qr_code{
+            flex-basis: 35%;
+            margin-top: 50px;
+            margin-right: 35px;
+            
+            .qr_code_img{
+                margin-left:110px;           
+                width:200px;
+                height:200px;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+    
+                }
+            }
+            .sign_with_qr{
+                font-size: 35px;
+                color: $white;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 25px;            
+    
+            }
+            .mobile_app{
+                color:#B9BBBE;
+                font-size:25px;
+                text-align: center;
+                margin-top: 15px;
+                a{
+                    text-decoration: none;
+                    color:#B9BBBE;
+                    font-size:27px;
+                    font-weight: bold;
+    
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1650px){
+        .form{
+            max-width: 850px;
+            min-height: 450px;
+
+            .left_form{
+               
+               .welcome_back{
+                   font-size: 25px;
+            }
+            .we_are_happy{
+                font-size: 16px;
+            }
+            form{
+                .email_pass{
+                    font-size: 13px;
+                }
+                input{
+                    width: 450px;
+                    height: 45px;
+                }
+                .pass_sign{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+                button{
+                    width: 450px;
+                    height: 45px;
+                }
+            }
+                
+
+            }
+            .qr_code{
+                .qr_code_img{
+                    width: 200px;
+                    height: 200px;
+                    margin-left:70px;
+                    margin-bottom: 30px;
+                }
+                .sign_with_qr{
+                    font-size: 25px;
+                }
+                .mobile_app{
+                    font-size: 17px;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+    @media screen and(max-width:1050px){
+        .qr_code{
+            display: none;
+        }
+        .form{
+            max-width:750px; 
+            .left_form{
+                margin-left: unset;
+              
+               
+            }
+                     
+        } 
+    }
+    @media screen and(max-width:750px){
+        background-image: unset;
+        background-color: $default;
+       
+        
+        .form{
+            width: 100%;
+            
+          
+        } 
+    }
+    @media screen and(max-width:550px){
+        .form{
+           
+            .left_form{
+               
+               .welcome_back{
+                   font-size: 25px;
+            }
+            .we_are_happy{
+                font-size: 16px;
+            }
+            form{
+                .email_pass{
+                    font-size: 12px;
+                }
+                input{
+                    width: 400px;
+                    height: 40px;
+                }
+                .pass_sign{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+                button{
+                    width: 400px;
+                    height: 40px;
+                }
+            }
+                
+
+            }
+            
+        }
+     
+        
+       
+        
+       
+    }
+    @media screen and(max-width:450px){
+        .form{
+           
+            .left_form{
+               
+               .welcome_back{
+                   font-size: 25px;
+            }
+            .we_are_happy{
+                font-size: 16px;
+            }
+            form{
+                .email_pass{
+                    font-size: 7px;
+                }
+                input{
+                    width:250px;
+                    height:30px;
+                }
+                .pass_sign{
+                    a{
+                        font-size: 11px;
+                    }
+                }
+                button{
+                    width:250px;
+                    height: 30px;
+                }
+            }
+                
+
+            }
+            
+        }
+     
+        
+       
+        
+       
+    }
+}
